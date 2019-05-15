@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Employees } from './EmployeesList.s';
-import { Employee } from './Employee/Employee';
-import { employeesList } from '../../../EmployeesApi/EmployeesFetch'
+import { EmployeeWrapper } from '../EmployeeWrapper/EmployeeWrapper';
+import { employeesList } from '../EmployeesApi/EmployeesFetch'
 
 export class EmployeesList extends Component {
   constructor() {
@@ -32,7 +32,7 @@ export class EmployeesList extends Component {
     return(
       <Employees>
         { this.state.employees.map((employee,key) => 
-            <Employee key={key} employee={employee} />
+            <EmployeeWrapper key={key} employee={employee} />
           )
         }
       </Employees>
