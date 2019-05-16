@@ -9,8 +9,4 @@ export const Employees = glamorous.div({
   '::-webkit-scrollbar' : {
     width: '0px'
   },
-  
-  '@media(max-width: 400px)': {
-    fontSize: 10
-  },
 })

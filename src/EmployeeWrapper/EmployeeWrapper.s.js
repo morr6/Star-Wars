@@ -37,6 +37,10 @@ export const EmployeeDetails = glamorous.div({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-around',
+  
+  '@media(max-width: 400px)': {
+    fontSize: 10
+  },
 })
   
 export const DetailsWrapper = glamorous.span({

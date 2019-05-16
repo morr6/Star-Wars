@@ -10,7 +10,8 @@ export const EmployeesListContainer = glamorous.div({
 
   '@media(max-width: 400px)': {
     height: '100%',
-    width: '100%'
+    width: '100%',
+    overflow: 'hidden',
   },
 })
 
