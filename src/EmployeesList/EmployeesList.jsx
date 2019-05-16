@@ -30,7 +30,7 @@ export class EmployeesList extends Component {
 
   render() {
     return(
-      <Employees>
+      <Employees class='employeeList'>
         { this.state.employees.map((employee,key) => 
             <EmployeeWrapper key={key} employee={employee} />
           )

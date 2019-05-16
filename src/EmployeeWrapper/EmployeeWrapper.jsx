@@ -32,7 +32,6 @@ export class EmployeeWrapper extends Component {
   }
 
   render() {
-    console.log(this.props)
     const {employee} = this.props
     return(
       <div>
@@ -50,34 +49,34 @@ export class EmployeeWrapper extends Component {
                 <DetailsWrapper>
                   <Detail>
                     <DetailName> Height: </DetailName> 
-                    <span> {employee.height} cm </span>
+                    {this.firstLetterUpperCase(employee.height)} cm 
                   </Detail>
                   <Detail> 
                     <DetailName> Mass: </DetailName> 
-                    <span> {employee.mass} kg </span> 
+                    {this.firstLetterUpperCase(employee.mass)} kg  
                   </Detail>
                   <Detail> 
                     <DetailName> Birth Year: </DetailName> 
-                    <span> {employee.birth_year} </span> 
+                    {employee.birth_year}  
                   </Detail>
                   <Detail> 
                     <DetailName> Gender: </DetailName> 
-                    <span> {employee.gender} </span> 
+                    {this.firstLetterUpperCase(employee.gender)}  
                   </Detail>
                 </DetailsWrapper>
                 
                 <DetailsWrapper>
                   <Detail>
                     <DetailName> Hair: </DetailName>
-                    <span> {employee.hair_color} </span>
+                    {this.firstLetterUpperCase(employee.hair_color)} 
                   </Detail>
                   <Detail>
                     <DetailName> Skin: </DetailName> 
-                    <span> {employee.skin_color} </span> 
+                    {this.firstLetterUpperCase(employee.skin_color)}  
                   </Detail>
                   <Detail>
                     <DetailName> Eye: </DetailName>
-                    <span> {employee.eye_color} </span> 
+                    {this.firstLetterUpperCase(employee.eye_color)}  
                   </Detail>             
                 </DetailsWrapper>
 
