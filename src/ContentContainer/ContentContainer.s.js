@@ -7,6 +7,10 @@ export const EmployeesListContainer = glamorous.div({
   borderRadius: '5px',
   display: 'flex',
   flexDirection: 'column',
+
+  '@media(max-width: 400px)': {
+    fontSize: 10
+  },
 })
 
 export const ListHeader = glamorous.div({
