@@ -58,9 +58,13 @@ export const Detail = glamorous.div({
 })
 
 export const AvatarWrapper = glamorous.div({
-
+  '@media(max-width: 400px)': {
+    height: '50px',
+    width: '50px'
+  },
 })
 
 export const EmployeeAvatar = glamorous.img({
-
+  height: '100%',
+  width: '100%'
 })

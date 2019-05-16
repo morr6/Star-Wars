@@ -9,7 +9,8 @@ export const EmployeesListContainer = glamorous.div({
   flexDirection: 'column',
 
   '@media(max-width: 400px)': {
-    fontSize: 10
+    height: '100%',
+    width: '100%'
   },
 })
 
