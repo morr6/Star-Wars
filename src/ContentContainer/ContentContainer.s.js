@@ -1,8 +1,8 @@
 import glamorous from 'glamorous';
 
 export const EmployeesListContainer = glamorous.div({
-  width: '32.5%',
-  height: '62.5%',
+  width: '600px',
+  height: '590px',
   background: '#2b3942',
   borderRadius: '5px',
   display: 'flex',
@@ -12,6 +12,12 @@ export const EmployeesListContainer = glamorous.div({
     height: '90%',
     width: '100%',
     overflow: 'hidden',
+
+    '@media(max-width: 800px)': {
+      height: '80%',
+      width: '80%',
+      overflow: 'hidden',
+    },
   },
 })
 
