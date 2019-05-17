@@ -10,11 +10,11 @@ export const EmployeesListContainer = glamorous.div({
   flexDirection: 'column',
 
   [media.media[2]]: {
-    height: '90%',
+    height: '100%',
     width: '100%',
     overflow: 'hidden',
   }, 
-  
+
 })
 console.log(media.media[3])
 export const ListHeader = glamorous.div({
