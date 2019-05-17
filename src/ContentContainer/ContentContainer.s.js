@@ -1,4 +1,5 @@
 import glamorous from 'glamorous';
+import * as media from '../mediaQueriesHandler'
 
 export const EmployeesListContainer = glamorous.div({
   width: '600px',
@@ -8,12 +9,12 @@ export const EmployeesListContainer = glamorous.div({
   display: 'flex',
   flexDirection: 'column',
 
-  '@media(max-width: 400px)': {
+    [media.media(0)]: {
     height: '90%',
     width: '100%',
     overflow: 'hidden',
 
-    '@media(max-width: 800px)': {
+    [media.media(3)]: {
       height: '80%',
       width: '80%',
       overflow: 'hidden',

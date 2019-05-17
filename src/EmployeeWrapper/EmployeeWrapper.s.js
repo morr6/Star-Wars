@@ -1,4 +1,5 @@
 import glamorous from 'glamorous';
+import * as media from '../mediaQueriesHandler'
 
 export const EmployeeContainter = glamorous.div({
   transition: '1s',
@@ -29,7 +30,12 @@ export const SaberWrapper = glamorous.div({
 
 export const Redsaber = glamorous.img({
   width: '95%',
-  height: '45px'
+  height: '45px',
+
+  [media.media(0)]: {
+    width: '90%',
+    height: '40%'
+  }
 })
 
 export const EmployeeDetails = glamorous.div({
@@ -38,7 +44,7 @@ export const EmployeeDetails = glamorous.div({
   alignItems: 'center',
   justifyContent: 'space-around',
   
-  '@media(max-width: 400px)': {
+  [media.media(0)]: {
     fontSize: 10
   },
 })
@@ -62,7 +68,7 @@ export const Detail = glamorous.div({
 })
 
 export const AvatarWrapper = glamorous.div({
-  '@media(max-width: 400px)': {
+  [media.media(0)]:: {
     height: '50px',
     width: '50px'
   },
