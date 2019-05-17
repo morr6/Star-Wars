@@ -66,7 +66,7 @@ export const DetailName = glamorous.div({
   paddingRight: '5px',
 
   [media.media[1]]: {
-    width: '50px',
+    width: '60px',
     paddingRight: '5px'
   }
 
