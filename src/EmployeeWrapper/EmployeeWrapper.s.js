@@ -65,9 +65,9 @@ export const DetailName = glamorous.div({
   float: 'left',
   paddingRight: '5px',
 
-  [media.media[2]]: {
+  [media.media[1]]: {
     width: '50px',
-    paddingRight: '0px'
+    paddingRight: '5px'
   }
 
 })
