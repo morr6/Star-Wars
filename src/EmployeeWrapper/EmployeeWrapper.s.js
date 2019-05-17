@@ -33,7 +33,7 @@ export const Redsaber = glamorous.img({
   width: '95%',
   height: '45px',
 
-  [media.media(0)]: {
+  [media.media[0]]: {
     width: '90%',
     height: '40%'
   }
@@ -45,10 +45,10 @@ export const EmployeeDetails = glamorous.div({
   alignItems: 'center',
   justifyContent: 'space-around',
   
-  [media.media(0)]: {
+  [media.media[0]]: {
     fontSize: '8px'
   },
-  [media.media(2)]: {
+  [media.media[2]]: {
     fontSize: '10px'
   },
 })
@@ -70,11 +70,10 @@ export const DetailName = glamorous.div({
 export const Detail = glamorous.div({
 
 })
-
 export const AvatarWrapper = glamorous.div({
-  [media.media(0)]: {
-    height: '5px',
-    width: '5px'
+  [media.media[0]]: {
+    height: '40px',
+    width: '40px'
   },
 })
 
