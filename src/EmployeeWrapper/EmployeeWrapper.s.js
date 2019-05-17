@@ -68,7 +68,7 @@ export const Detail = glamorous.div({
 })
 
 export const AvatarWrapper = glamorous.div({
-  [media.media(0)]:: {
+  [media.media(0)]: {
     height: '50px',
     width: '50px'
   },
