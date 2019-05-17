@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Star-Wars/static/css/main.4f425633.chunk.css",
-    "main.js": "/Star-Wars/static/js/main.645cb2e5.chunk.js",
-    "main.js.map": "/Star-Wars/static/js/main.645cb2e5.chunk.js.map",
+    "main.js": "/Star-Wars/static/js/main.38abe5af.chunk.js",
+    "main.js.map": "/Star-Wars/static/js/main.38abe5af.chunk.js.map",
     "runtime~main.js": "/Star-Wars/static/js/runtime~main.47cb02c2.js",
     "runtime~main.js.map": "/Star-Wars/static/js/runtime~main.47cb02c2.js.map",
     "static/js/2.b6004dfa.chunk.js": "/Star-Wars/static/js/2.b6004dfa.chunk.js",
     "static/js/2.b6004dfa.chunk.js.map": "/Star-Wars/static/js/2.b6004dfa.chunk.js.map",
     "index.html": "/Star-Wars/index.html",
-    "precache-manifest.5bf33f5fd116ed50a35c5d07fb485676.js": "/Star-Wars/precache-manifest.5bf33f5fd116ed50a35c5d07fb485676.js",
+    "precache-manifest.de6af763db636546184eb42a1eb847b6.js": "/Star-Wars/precache-manifest.de6af763db636546184eb42a1eb847b6.js",
     "service-worker.js": "/Star-Wars/service-worker.js",
     "static/css/main.4f425633.chunk.css.map": "/Star-Wars/static/css/main.4f425633.chunk.css.map",
     "static/media/blue-lightsaber.png": "/Star-Wars/static/media/blue-lightsaber.b07b0442.png",
