@@ -6,6 +6,7 @@ export const EmployeeContainter = glamorous.div({
   width: '90%', 
   margin: '2px 0 0 5%',
   fontWeight: 'bold',
+  overflow: 'hidden'
   
 })
 
@@ -44,7 +45,10 @@ export const EmployeeDetails = glamorous.div({
   alignItems: 'center',
   justifyContent: 'space-around',
   
-  [media.media(0 || 1)]: {
+  [media.media(0)]: {
+    fontSize: 8
+  },
+  [media.media(2)]: {
     fontSize: 8
   },
 })
