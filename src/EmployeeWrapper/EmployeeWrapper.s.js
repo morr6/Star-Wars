@@ -48,7 +48,7 @@ export const EmployeeDetails = glamorous.div({
   [media.media[0]]: {
     fontSize: '8px'
   },
-  [media.media[2]]: {
+  [media.media[1]]: {
     fontSize: '10px'
   },
 })
@@ -76,7 +76,7 @@ export const Detail = glamorous.div({
 
 })
 export const AvatarWrapper = glamorous.div({
-  [media.media[2]]: {
+  [media.media[1]]: {
     height: '40px',
     width: '40px'
   },
