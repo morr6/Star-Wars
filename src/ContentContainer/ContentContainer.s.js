@@ -1,8 +1,8 @@
 import glamorous from 'glamorous';
 
 export const EmployeesListContainer = glamorous.div({
-  width: '600px',
-  height: '590px',
+  width: '32.5%',
+  height: '62.5%',
   background: '#2b3942',
   borderRadius: '5px',
   display: 'flex',
