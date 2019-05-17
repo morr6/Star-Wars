@@ -9,7 +9,7 @@ export const EmployeesListContainer = glamorous.div({
   flexDirection: 'column',
 
   '@media(max-width: 400px)': {
-    height: '100%',
+    height: '90%',
     width: '100%',
     overflow: 'hidden',
   },
