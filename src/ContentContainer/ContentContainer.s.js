@@ -13,13 +13,8 @@ export const EmployeesListContainer = glamorous.div({
     height: '90%',
     width: '100%',
     overflow: 'hidden',
-  },
-
-  [media.media[3]]: {
-    height: '80%',
-    width: '80%',
-    overflow: 'hidden',
-  },
+  }, 
+  
 })
 console.log(media.media[3])
 export const ListHeader = glamorous.div({
