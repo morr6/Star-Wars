@@ -46,10 +46,10 @@ export const EmployeeDetails = glamorous.div({
   justifyContent: 'space-around',
   
   [media.media(0)]: {
-    fontSize: 8
+    fontSize: '8px'
   },
   [media.media(2)]: {
-    fontSize: 8
+    fontSize: '10px'
   },
 })
   
@@ -74,7 +74,7 @@ export const Detail = glamorous.div({
 export const AvatarWrapper = glamorous.div({
   [media.media(0)]: {
     height: '5px',
-    width: '40px'
+    width: '5px'
   },
 })
 
