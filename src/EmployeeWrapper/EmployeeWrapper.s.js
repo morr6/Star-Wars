@@ -46,10 +46,10 @@ export const EmployeeDetails = glamorous.div({
   justifyContent: 'space-around',
   
   [media.media[0]]: {
-    fontSize: '8px'
+    fontSize: '6px'
   },
   [media.media[2]]: {
-    fontSize: '10px'
+    fontSize: '8px'
   },
 })
   
