@@ -50,10 +50,8 @@ export const PageButtonsWrapper = glamorous.div({
   height: '35px',
   bottom: '-50',
  
-  [media.media[0]] : {
-    top: 75,
-    color: '#2b3942',
-    background: '#5f6c75',
+  [media.media[1]] : {
+    top: 80,
   }
 })
 
@@ -79,6 +77,11 @@ export const PageButton = glamorous.button(props => {
 
     ':active' : {
       transform: 'scale(.8)'
+    },
+
+    [media.media[1]]: {
+      color: '#2b3942',
+      background: '#5f6c75',
     }
   }
 })
