@@ -57,7 +57,7 @@ export const PageButtonsWrapper = glamorous.div({
   [media.media[4]]: {
     top: 10,
     width: '50%',
-    right: 0
+    right: 10
   },
   [media.media[5]] : {
     botton: -80,
