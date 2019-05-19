@@ -47,6 +47,7 @@ export const PageButtonsWrapper = glamorous.div({
   justifyContent: 'space-between',
   position: 'absolute',
   width: '100%',
+  height: '35px',
   bottom: '-50',
  
   [media.media[0]] : {
