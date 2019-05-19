@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import { Employees, LoadingAnimationWrapper, LoadingImage, Elo } from './EmployeesList.s';
+import { Employees, LoadingAnimationWrapper, LoadingImage, LoadingMessage } from './EmployeesList.s';
 import { EmployeeWrapper } from '../EmployeeWrapper/EmployeeWrapper';
-import { employeesList } from '../EmployeesApi/EmployeesFetch'
+import { employeesList } from '../Utilities/EmployeesApi/EmployeesFetch'
 import loadingImageUrl from '../Assets/Images/loadingImage.png'
 
 export class EmployeesList extends Component {
@@ -9,8 +9,8 @@ export class EmployeesList extends Component {
     super();
 
     this.state = {
-      employees: [],
-      isApiLoading: false
+      employees: [] ,
+      isApiLoading: false,
     }
   }
 
@@ -18,11 +18,10 @@ export class EmployeesList extends Component {
     this.setState({isApiLoading: !this.state.isApiLoading})
   }
 
-  fetchApi() {
-
+  fetchApi(page) {
     this.toogleApiLoadingStatus();
 
-    employeesList.fetchList()
+    employeesList.fetchList(page)
     .then(
       (result) => {
         this.setState({employees: result.results});
@@ -34,25 +33,30 @@ export class EmployeesList extends Component {
     )
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.fetchApi(nextProps.page)
+  }
+
   componentDidMount() {
-    this.fetchApi()
+    this.fetchApi(this.props.page)
   }
 
   renderContent() {
     if (this.state.isApiLoading) { 
       return <LoadingAnimationWrapper>
         <LoadingImage src={loadingImageUrl}/>
-        <Elo>. . .</Elo>
+        <LoadingMessage>. . .</LoadingMessage>
       </LoadingAnimationWrapper>
     } 
     else {
-      return this.state.employees.map(
+      return this.state.employees && this.state.employees.map(
         (employee,key) => <EmployeeWrapper key={key} employee={employee} />
       )
     } 
   }
 
   render() {
+    console.log('props:'+this.props.page)
     return(
       <Employees isApiLoading={this.state.isApiLoading}>
         { this.renderContent() }

@@ -43,7 +43,7 @@ export const LoadingImage = glamorous.img({
   marginBottom: '6px',
 })
 
-export const Elo = glamorous.div({
+export const LoadingMessage = glamorous.div({
   animation: `${loadingDtos} 2s infinite`, 
   width: '100%'
 })

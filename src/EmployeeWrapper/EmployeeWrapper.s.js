@@ -1,5 +1,5 @@
 import glamorous from 'glamorous';
-import * as media from '../mediaQueriesHandler'
+import * as media from '../Utilities/mediaQueriesHandler'
 
 export const EmployeeContainter = glamorous.div({
   transition: '1s',
