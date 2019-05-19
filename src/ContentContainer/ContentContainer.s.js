@@ -48,6 +48,10 @@ export const PageButtonsWrapper = glamorous.div({
   position: 'absolute',
   width: '100%',
   bottom: '-50',
+ 
+  [media.media[0]] : {
+    top: 50
+  }
 })
 
 export const PageButton = glamorous.button(props => {
